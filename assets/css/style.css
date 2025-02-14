@@ -1,5 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Sacramento");
 
+body {
+  background: url('https://media.istockphoto.com/id/1368004438/es/foto/foto-de-una-pareja-disfrutando-de-un-día-en-la-playa.jpg?s=612x612&w=0&k=20&c=0Jz3Bb3dI26kuiBX-JDBhQ76R4m5S9K14n-y59HI46E=') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  opacity: 0.3; /* Ajusta la opacidad según sea necesario */
+  z-index: -1;
+}
+
 #card {
   height: 500px;
   width: 800px;
